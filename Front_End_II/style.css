@@ -1,0 +1,31 @@
+h1 {
+    font-family: Brush Script MT, cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+ul, section {
+    font-family: Brush Script MT, cursive;
+    font-size: 18px;
+}
+
+.headlines {
+    background-color: goldenrod;
+    color: grey;
+    text-align: center;
+}
+
+.items {
+    text-align: center;
+}
+
+#list_item {
+    list-style-position: inside;
+    color: brown;
+}
+
+#table_item {
+    width: 100%;
+    border: 1px solid;
+    padding: 15px;
+}
