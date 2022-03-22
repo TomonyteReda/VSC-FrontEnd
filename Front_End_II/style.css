@@ -2,17 +2,34 @@ h1 {
     font-family: Brush Script MT, cursive;
     font-size: 30px;
     text-align: center;
+    border-style: dotted;
+    border-color: goldenrod;
+    border-radius: 10px;
+    border-width: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 10px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 ul, section {
     font-family: Brush Script MT, cursive;
     font-size: 18px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 .headlines {
     background-color: goldenrod;
     color: grey;
     text-align: center;
+    border-style: double;
+    border-color: white;
+    padding: 5px 0px 5px 0px;
+
+}
+
+.bottom-border {
+    border-bottom: 5px dashed grey;
 }
 
 .items {
@@ -20,8 +37,20 @@ ul, section {
 }
 
 #list_item {
+    position: relative;
     list-style-position: inside;
     color: brown;
+    padding-left: 1000px;
+}
+
+#img_item {
+    border-style: dotted;
+    border-color: goldenrod;
+    border-radius: 100px;
+    border-width: 5px 5px 5px 5px;
+    padding: 30px 10px 10px 10px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 #table_item {
