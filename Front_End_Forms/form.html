@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front End: HTML Form</title>
+    <link rel="stylesheet" href="form_style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Payment form</h1>
+      <p>Required fields are followed by *.</p>
+    </div>
+    <form action="/testform" method="post">
+      <div class="contact-information">
+        <h2>Contact information</h2>
+        <fieldset id="title">
+          <legend>Title</legend>
+          <div>
+            <input type="radio" id="Mister" name="drone" value="Mister" />
+            <label for="Mister">Mister</label>
+          </div>
+          <div>
+            <input type="radio" id="Miss" name="drone" value="Miss" />
+            <label for="Miss">Miss</label>
+          </div>
+        </fieldset>
+        <br />
+        <ol>
+          <li>
+            <label for="name">Name:<abbr title="required">*</abbr></label>
+            <input type="text" id="name" name="name" required /><br />
+          </li>
+          <li>
+            <label for="email">E-mail:<abbr title="required">*</abbr></label>
+            <input type="email" id="email" name="email" required /><br />
+          </li>
+          <li>
+            <label for="password">Password:<abbr title="required">*</abbr></label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+            /><br />
+          </li>
+        </ol>
+      </div>
+      <div class="payment-information">
+        <h2>Payment information</h2>
+        <ol>
+            <li>
+                <label for="card_type">Card type:</label>
+                <input id="card_type" name="card_type" list="card_types" />
+                <datalist id="card_types">
+                <option value="Visa"></option>
+                <option value="MasterCard"></option>
+                </datalist>
+            </li>
+            <li>
+                <label for="card_number">Card number:<abbr title="required">*</abbr></label>
+                <input type="tel" id="card_number" name="card_number" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+            </li>
+            <li>
+                <label>Expiration date:<abbr title="required">*</abbr></label>
+                <input type="month" id="expiration_date" name="expiration_date" required>
+                <p id="date-format">formatted as mm/yy</p>
+            </li>
+            <br>
+            <br>
+            <br>
+            <div class="button">
+                <button type="submit">Validate the payment</button>
+            </div>
+      </div>
+    </form>
+  </body>
+</html>
